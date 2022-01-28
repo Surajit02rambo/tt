@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Allerta+Stencil&family=Anton&family=Archivo+Black&family=Bungee&family=Bungee+Shade&family=Chakra+Petch:wght@700&family=Comfortaa:wght@300&family=Comforter&family=Fjalla+One&family=Manrope:wght@600&family=Maven+Pro:wght@400;500&family=Monoton&family=Pacifico&family=Playball&family=Poiret+One&family=Quicksand&family=Readex+Pro&family=Righteous&family=Unica+One&family=Yesteryear&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Allerta+Stencil&family=Anton&family=Archivo+Black&family=Bungee&family=Bungee+Shade&family=Chakra+Petch:wght@700&family=Comfortaa:wght@300&family=Comforter&family=Fjalla+One&family=Manrope:wght@600&family=Maven+Pro:wght@400;500&family=Monoton&family=Outfit:wght@500&family=Pacifico&family=Playball&family=Poiret+One&family=Quicksand&family=Readex+Pro&family=Righteous&family=Unica+One&family=Yesteryear&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Allerta+Stencil&family=Anton&family=Archivo+Black&family=Bungee&family=Bungee+Shade&family=Chakra+Petch:wght@700&family=Comfortaa:wght@300&family=Comforter&family=Fjalla+One&family=Great+Vibes&family=Manrope:wght@600&family=Maven+Pro:wght@400;500&family=Monoton&family=Outfit:wght@500&family=Pacifico&family=Playball&family=Poiret+One&family=Quicksand&family=Readex+Pro&family=Righteous&family=Unica+One&family=Yesteryear&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+  overflow-x: hidden;
+  background-repeat: repeat;
+  background: url(background.png);
+  scroll-behavior: smooth;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  transition: background-color .5s;
+}
+
+.galleryimage{
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+  margin-top: 370px;
+  margin-left: -10px;
+}
+
+
+   
+@media screen and (max-width: 991px) {
+  .deskmenu{
+    visibility: hidden;
+  }
+  .potrait{
+    max-width: 100vw;
+  }
+  .logo{
+    display: none;
+  }
+  #main{
+    visibility: visible !important;
+  }
+  .logo {
+    left: 30px;
+  }
+  .nav{
+    right: 30px;
+  }
+  h1{
+    font-size: 9vw;
+    -webkit-text-stroke: 2px transparent;
+    text-stroke: 2px transparent;
+    -webkit-text-fill-color: #ffeba7;
+    text-fill-color: #ffeba7;
+    color: #ffeba7;
+  }
+  .nav ul li a{
+    font-size: 8vh;
+  }
+}
+.over{
+    position: relative;
+	background-color: black;
+}
+.headerimg{
+  position: absolute;
+    height: 650px;
+    width: 102%;
+    margin-top: -800px;
+    margin-left: -8px;
+    background-image: url(37e043b5-cc3b-4952-8967-0f98e96738e9.jfif);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+	background-color: rgba(10, 10, 10, 0.616);
+    width: 102.8%;
+    height: 650px;
+    margin-top: -800px;
+    margin-left: -8px;
+}
+.logo{
+  height: 150px;
+  width: 270px;
+  position: fixed;
+  margin-top: -793px;
+  margin-left: -80px;
+  z-index: 999999;
+}
+
+.tagline{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  margin-top: -600px;
+  margin-left: 500px;
+  font-family: 'Poiret One', cursive;
+  font-weight: 800 !important;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+.catchline{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 55px;
+  font-family: 'Comforter', cursive;
+  margin-top: -300px;
+  margin-left: 520px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  z-index: 2;
+}
+@media screen and (max-width: 450px){
+    .tagline{
+      font-size: 17px;
+      margin-left: 20px;
+      margin-top: -500px;
+    }
+    .catchline{
+      font-size: 28px;
+      margin-left: 30px;
+    }
+    .nav ul li a{
+      font-size: 28px;
+    }
+    .headerimg{
+  background-image: url(pexels-photo-1408221.jpeg);
+    }
+    .potrait{
+      margin-left: -30px !important;
+    }
+    .potrait li{
+      height: 380px !important;
+      width: 320px !important;
+      margin: 10px !important;
+    }
+    h3{
+      margin-left: 120px !important;
+    }
+    .potrait img{
+      height: 380px !important;
+      width: 320px !important;
+    }
+    .logo{
+  height: 150px;
+  width: 300px;
+  margin-top: -793px;
+  margin-left: 110px;
+  z-index: 999;
+}
+}
+h3{
+  position: absolute;
+  color: rgb(27, 1, 19);
+  font-size: 20px !important;
+  margin-top: -70px;
+  margin-left: 100px;
+}
+.potrait{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin-left: 80px;
+  margin-top: -20px;
+}
+.potrait li{
+   height: 480px;
+   width: 400px;
+   background-color: blue;
+   margin: 10px;
+   left: 100px;
+  
+}
+.potrait img{
+  height: 480px;
+  width: 400px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 9999;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  position: absolute;
+  margin-top: -770px;
+  width: 350px;
+  margin-left: -15px;
+  color: white;
+  z-index: 999;
+  background-color: rgb(22, 2, 18);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  height: 35px;
+}
+
+@media screen and (max-height: 1650px) {
+    #main{
+      visibility: hidden;
+    }
+}
+
+@media screen and (max-height: 450px) {
+
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.deskmenu{
+  list-style-type: none;
+  /* display: flex;
+  flex-direction: row; */
+  background: none;
+  height: 70px;
+  width: 100vw;
+  margin-left: -20px;
+  position: fixed;
+  margin-top: -760px;
+  transition: 0.65s ease-in-out;
+  column-gap: 4px;
+  z-index: 9999;
+  display: grid;
+  grid-template-columns: 7fr 1fr 1fr 1fr 1fr;
+}
+.deskmenu li{
+  color: #f1f1f1;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.deskmenu li a{
+  text-decoration: none;
+  color: #f1f1f1;
+  scroll-behavior: smooth 0.5s ease-in-out;
+}
+.deskmenu li a:hover{
+  color: #818181;
+  transition: 0.5s ease-in-out;
+}
+  </style>
+</head>
+
+<body>
+  <img class="galleryimage" src="galleryimage.png">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#potrait">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="tab"><i class="fas fa-bars"></i></span>
+  </div>
+  
+  
+    <div class="over">
+      <img class="headerimg">
+      <ul class="deskmenu" id="nav">
+        <li><a></a></li>
+        <li><a href="#potrait">Potrait</a></li>
+        <li><a>Festive</a></li>
+        <li><a>Abstract</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <pre class="tagline">"A good snapshot keeps a moment 
+ that's gone from running away. 
+ Its About a secret, the more it 
+ tells you, the less you know" </pre>
+ <pre class="catchline">Capture Your Moments</pre>
+      <div class="overlay"></div>
+    </div>
+    <img src="oneshot.png" class="logo">
+    <h3><i class="fas fa-crop-alt"></i> Potrait <i class="fas fa-caret-down"></i></h3>
+    <div>
+      <ul class="potrait" id="potrait">
+        <li>
+         <div class="container">
+          <img src="potrait1.jfif">
+         </div>
+        </li>
+        <li>
+         <div class="container">
+          <img src="potrait2.jfif">
+         </div>
+        </li>
+        <li>
+          <div class="container">
+            <img src="potrait3.jfif">
+          </div>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+</body>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "390px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+
+  window.onscroll = function(){
+var top =	 window.pageYOffset || document.documentElement.scrollTop;
+if (top > 80) {
+	document.getElementById('nav').style.background = "rgb(19, 0, 15)";
+} else {
+	document.getElementById('nav').style.background = "none";
+}
+};
+  </script>
+</html>
+
